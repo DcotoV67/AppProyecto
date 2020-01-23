@@ -15,5 +15,5 @@ public abstract class AppDao {
     @Insert
     abstract void insertarUsuario(User user);
 
-
+//Hola
 }
