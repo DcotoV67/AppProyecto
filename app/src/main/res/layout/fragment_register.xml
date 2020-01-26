@@ -3,15 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".RegisterFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_margin="20dp"
         android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="50dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -22,49 +27,73 @@
 
             <EditText
                 android:id="@+id/user"
-                android:hint="User"
-                android:layout_width="300dp"
+                android:layout_marginBottom="6dp"
+                android:hint="Nombre"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="22sp"
+                android:backgroundTint="@color/botonU"
+                android:foregroundTint="@color/botonU"/>
 
             <EditText
                 android:id="@+id/password"
-                android:hint="Password"
-                android:layout_width="300dp"
+                android:layout_marginBottom="6dp"
+                android:hint="Contraseña"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="22sp"
+                android:backgroundTint="@color/botonU"
+                android:foregroundTint="@color/botonU"/>
 
             <EditText
                 android:id="@+id/pswdConfirm"
-                android:hint="Repeat the password"
-                android:layout_width="300dp"
+                android:layout_marginBottom="6dp"
+                android:hint="Repite la contraseña"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="22sp"
+                android:backgroundTint="@color/botonU"
+                android:foregroundTint="@color/botonU"/>
 
             <EditText
                 android:id="@+id/email"
-                android:hint="Email"
-                android:layout_width="300dp"
+                android:layout_marginBottom="6dp"
+                android:hint="Correo electrónico"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="22sp"
+                android:backgroundTint="@color/botonU"
+                android:foregroundTint="@color/botonU"/>
 
             <EditText
                 android:id="@+id/emailConfirm"
-                android:hint="Repeat the email"
-                android:layout_width="300dp"
+                android:layout_marginBottom="6dp"
+                android:hint="Repite el correo electrónico"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"/>
+                android:textSize="22sp"
+                android:backgroundTint="@color/botonU"
+                android:foregroundTint="@color/botonU"/>
 
         </LinearLayout>
 
-        <Button
+
+        <life.sabujak.roundedbutton.RoundedButton
             android:id="@+id/btn_register"
-            android:layout_width="wrap_content"
+            android:layout_margin="24dp"
+            android:gravity="center"
+            android:padding="24dp"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            app:buttonGradientStartColor="@color/botonU"
+            app:buttonGradientEndColor="@color/botonD"
+            app:buttonCornerRadius="20dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Registrar"/>
+            android:text="Registrar usuario"
+            app:buttonRippleColor="#ffffff"/>
+
 
     </LinearLayout>
 </FrameLayout>

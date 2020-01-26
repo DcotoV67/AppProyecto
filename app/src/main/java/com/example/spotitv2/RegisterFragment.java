@@ -17,6 +17,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import life.sabujak.roundedbutton.RoundedButton;
 
 
 /**
@@ -32,6 +35,7 @@ public class RegisterFragment extends Fragment {
     NavController navController;
     AppViewModel appViewModel;
     EditText emailEditText, passwordEditText, userEditText;
+    RoundedButton btn_registrar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -50,30 +54,14 @@ public class RegisterFragment extends Fragment {
         emailEditText = view.findViewById(R.id.email);
         passwordEditText = view.findViewById(R.id.password);
         userEditText = view.findViewById(R.id.user);
+        btn_registrar = view.findViewById(R.id.btn_register);
 
-        view.findViewById(R.id.btn_register).setOnClickListener(new View.OnClickListener() {
+
+
+        btn_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                String email = emailEditText.getText().toString();
-                String user = userEditText.getText().toString();
-                String password = passwordEditText.getText().toString();
-
-                appViewModel.registraUsuario(email, password, user);
-
-                appViewModel.usuarioNoDisponible.observe(getViewLifecycleOwner(), new Observer<Boolean>() {
-                    @Override
-                    public void onChanged(Boolean aBoolean) {
-
-                    }
-                });
-            }
-        });
-
-        Button btn_register = view.findViewById(R.id.btn_register);
-        btn_register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                Toast.makeText(getActivity(),"Usuario registrado con éxito", Toast.LENGTH_LONG).show();
                 navController.navigate(R.id.homeFragment);
 
             }

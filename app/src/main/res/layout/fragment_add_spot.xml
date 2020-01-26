@@ -6,6 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AddSpotFragment">
 
+<!--  Eliminar Fragment, sustituir por New Spot  -->
+
     <LinearLayout
         android:layout_margin="10dp"
         android:layout_width="match_parent"

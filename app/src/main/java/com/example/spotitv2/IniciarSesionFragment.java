@@ -18,6 +18,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+
+import life.sabujak.roundedbutton.RoundedButton;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -56,10 +60,10 @@ public class IniciarSesionFragment extends Fragment {
         navController = Navigation.findNavController(view);
 
 
-        Button btn_iniciar_sesion = view.findViewById(R.id.btn_iniciar_sesion);
+        RoundedButton btn_iniciar_sesion = view.findViewById(R.id.btn_iniciar_sesion);
 
-        final EditText username = view.findViewById(R.id.user_login);
-        final EditText userpassword = view.findViewById(R.id.password_login);
+        final  TextInputEditText username = view.findViewById(R.id.user_login);
+        final TextInputEditText userpassword = view.findViewById(R.id.password_login);
 
         btn_iniciar_sesion.setOnClickListener(new View.OnClickListener() {
             @Override

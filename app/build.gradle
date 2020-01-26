@@ -47,5 +47,6 @@ dependencies {
 
     implementation 'de.hdodenhof:circleimageview:3.0.1'
 
+    implementation 'com.github.sabujak-sabujak:RoundedButton:v0.1.1'
 
 }

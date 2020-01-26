@@ -1,6 +1,7 @@
 package com.example.spotitv2;
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ import java.util.Map;
 public class NewSpotFragment extends Fragment {
 
     public static final int PICK_IMAGE = 1;
+    public static final int PICK_LOCATION = 1;
     ImageView spotImageView;
     TextView ubicacionMapa;
 
@@ -72,12 +74,26 @@ public class NewSpotFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent MapsActivity = new Intent(getActivity(), MapsActivity.class);
-                startActivity(MapsActivity);
+                startActivityForResult(MapsActivity, PICK_LOCATION);
 
             }
 
         });
+
+//        @Override
+//        public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//            super.onActivityResult(requestCode, resultCode, data);
+//
+//            if (requestCode == PICK_IMAGE && data != null && data.getData() != null) {
+//
+//                Uri uri = data.getData();
+//
+//                Glide.with(requireActivity()).load(uri).into(spotImageView);
+//            }
+//        }
     }
+
+
 
     public void chooseImage() {
         Intent intent = new Intent();
