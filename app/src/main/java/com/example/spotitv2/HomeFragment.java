@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import life.sabujak.roundedbutton.RoundedButton;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -36,11 +38,10 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button btn_add_spot = view.findViewById(R.id.btn_add_spot);
-        Button btn_search_spot = view.findViewById(R.id.btn_search_spot);
-        Button btn_manage_spot = view.findViewById(R.id.btn_manage_spot);
-        Button btn_enter_profile = view.findViewById(R.id.btn_ver_perfil);
-        Button btn_see_spot = view.findViewById(R.id.btn_see_spot);
+        RoundedButton btn_add_spot = view.findViewById(R.id.btn_add_spot);
+        RoundedButton btn_manage_spot = view.findViewById(R.id.btn_manage_spot);
+        RoundedButton btn_enter_profile = view.findViewById(R.id.btn_ver_perfil);
+        RoundedButton btn_see_spot = view.findViewById(R.id.btn_see_spot);
 
 
         //Accion del boton add_spot
@@ -51,22 +52,11 @@ public class HomeFragment extends Fragment {
 //                startActivity(addSpotActivity);
 
                 //Aqui elegimos a que fragment navegar
-                Navigation.findNavController(view).navigate(R.id.addSpotFragment);
+                Navigation.findNavController(view).navigate(R.id.newSpotFragment);
 
             }
         });
 
-        //Accion del boton search_spot
-        btn_search_spot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Intent searchSpotactivity = new Intent(MainActivity.this, searchSpotActivity.class);
-//                startActivity(searchSpotactivity);
-
-                //Aqui elegimos a que fragment navegar
-
-            }
-        });
 
         btn_manage_spot.setOnClickListener(new View.OnClickListener() {
             @Override

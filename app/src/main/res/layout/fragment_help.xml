@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ayuda para el usuario"
+            android:textSize="30sp"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/negro"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La aplicación funciona utilizando la galería del telefono y una actividad de Google Maps. Se navega mediante el uso de botones, un spot es una ubicacion en el mundo.\n\n En caso de algun problema reportar a dcotov67@elpuig.xeill.net."/>
+
+    </LinearLayout>
+</FrameLayout>

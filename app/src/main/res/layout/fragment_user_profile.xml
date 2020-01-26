@@ -31,17 +31,6 @@
             app:civ_border_width="5dp"/>
 
         <TextView
-            android:id="@+id/username"
-            android:layout_gravity="left"
-            android:text="Username"
-            android:textSize="60px"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <TextView
             android:id="@+id/nombre"
             android:layout_gravity="left"
             android:text="Nombre"
@@ -50,36 +39,49 @@
             android:layout_height="wrap_content" />
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"/>
 
         <TextView
             android:id="@+id/userEmail"
             android:layout_gravity="left"
-            android:text="Email"
+            android:text="Correo Electrónico"
             android:textSize="60px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"/>
 
         <TextView
             android:id="@+id/userBio"
             android:layout_gravity="left"
-            android:text="Bio"
+            android:text="Biografía"
             android:textSize="60px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/modifyProfile"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50px"
-            android:text="Guardar Cambios" />
+            android:layout_marginBottom="15dp"/>
+
+        <life.sabujak.roundedbutton.RoundedButton
+            android:id="@+id/modifyProfile"
+            android:layout_margin="24dp"
+            android:padding="24dp"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            app:buttonGradientStartColor="@color/botonU"
+            app:buttonGradientEndColor="@color/botonD"
+            app:buttonCornerRadius="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:buttonRippleColor="#ffffff"
+            android:text="Guardar Cambios"/>
 
     </LinearLayout>
 

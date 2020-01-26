@@ -73,14 +73,6 @@ public class ManageSpotFragment extends Fragment {
 
             Glide.with(requireActivity()).load(spot.imagenURL).into(holder.spotImageView);
 
-            //-----------------Dani del futuro, pon el onClick para cada elemento, att Dani del pasado-------------------
-
-            //  Sigue esa práctica, zoquete https://gerardfp.github.io/mp08/p5/#5
-
-
-            //------------------------------------
-
-
         }
 
         @Override

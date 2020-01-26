@@ -8,11 +8,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_weight="1"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:paddingTop="36dp"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:id="@+id/textView"
@@ -28,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="Find the spot" />
+        android:text="Find the spot"
+        android:layout_marginBottom="10dp"/>
 
 </LinearLayout>

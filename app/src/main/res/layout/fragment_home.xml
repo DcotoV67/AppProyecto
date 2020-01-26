@@ -3,56 +3,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment"
     android:orientation="vertical"
     android:gravity="center">
 
 
-        <Button
-            android:background="@drawable/round_button"
-            android:layout_margin="25px"
-            android:textSize="50px"
-            android:id="@+id/btn_ver_perfil"
-            android:layout_width="500px"
-            android:layout_height="300px"
-            android:text="Entrar al perfil"/>
+        <life.sabujak.roundedbutton.RoundedButton
+            android:layout_margin="24dp"
+            android:gravity="center"
+            android:padding="24dp"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            app:buttonGradientStartColor="@color/botonU"
+            app:buttonGradientEndColor="@color/botonD"
+            app:buttonCornerRadius="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Editar Perfil"
+            app:buttonRippleColor="#ffffff"
+            android:id="@+id/btn_ver_perfil"/>
 
-
-        <Button
-            android:background="@drawable/round_button"
-            android:textSize="50px"
-            android:layout_margin="25px"
+        <life.sabujak.roundedbutton.RoundedButton
             android:id="@+id/btn_add_spot"
-            android:layout_width="500px"
-            android:layout_height="300px"
-            android:text="Añadir Spot"/>
+            android:layout_margin="24dp"
+            android:gravity="center"
+            android:padding="24dp"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            app:buttonGradientStartColor="@color/botonU"
+            app:buttonGradientEndColor="@color/botonD"
+            app:buttonCornerRadius="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Añadir Spot"
+            app:buttonRippleColor="#ffffff"/>
 
-        <Button
-            android:background="@drawable/round_button"
-            android:textSize="50px"
-            android:layout_margin="25px"
-            android:id="@+id/btn_search_spot"
-            android:layout_width="500px"
-            android:layout_height="300px"
-            android:text="Buscar Spot"/>
-
-        <Button
-            android:background="@drawable/round_button"
-            android:textSize="50px"
-            android:layout_margin="25px"
+        <life.sabujak.roundedbutton.RoundedButton
             android:id="@+id/btn_manage_spot"
-            android:layout_width="500px"
-            android:layout_height="300px"
-            android:text="Gestionar Spots"/>
+            android:layout_margin="24dp"
+            android:gravity="center"
+            android:padding="24dp"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            app:buttonGradientStartColor="@color/botonU"
+            app:buttonGradientEndColor="@color/botonD"
+            app:buttonCornerRadius="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Gestionar Spots"
+            app:buttonRippleColor="#ffffff"/>
 
-        <Button
-            android:background="@drawable/round_button"
-            android:textSize="50px"
-            android:layout_margin="25px"
+        <life.sabujak.roundedbutton.RoundedButton
             android:id="@+id/btn_see_spot"
-            android:layout_width="500px"
-            android:layout_height="300px"
-            android:text="Ver Spots"/>
-
+            android:layout_margin="24dp"
+            android:gravity="center"
+            android:padding="24dp"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            app:buttonGradientStartColor="@color/botonU"
+            app:buttonGradientEndColor="@color/botonD"
+            app:buttonCornerRadius="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Ver Spots"
+            app:buttonRippleColor="#ffffff"/>
 
 </LinearLayout>

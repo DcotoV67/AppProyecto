@@ -9,6 +9,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,10 +18,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
 import java.util.Map;
+
+import life.sabujak.roundedbutton.RoundedButton;
 
 
 /**
@@ -50,8 +54,9 @@ public class NewSpotFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button btn_add_spot_img = view.findViewById(R.id.button_img);
-        Button btn_add_spot_map = view.findViewById(R.id.button_map);
+        RoundedButton btn_add_spot_img = view.findViewById(R.id.button_img);
+        RoundedButton btn_add_spot_map = view.findViewById(R.id.button_map);
+        RoundedButton btn_create_spot = view.findViewById(R.id.btn_create_spot);
 
         ubicacionMapa = view.findViewById(R.id.ubicacionMapa);
 
@@ -80,17 +85,14 @@ public class NewSpotFragment extends Fragment {
 
         });
 
-//        @Override
-//        public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-//            super.onActivityResult(requestCode, resultCode, data);
-//
-//            if (requestCode == PICK_IMAGE && data != null && data.getData() != null) {
-//
-//                Uri uri = data.getData();
-//
-//                Glide.with(requireActivity()).load(uri).into(spotImageView);
-//            }
-//        }
+        btn_create_spot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(view).navigate(R.id.seeSpotFragment);
+                Toast.makeText(getActivity(), "Spot creado con éxito",Toast.LENGTH_LONG).show();
+            }
+        });
+
     }
 
 

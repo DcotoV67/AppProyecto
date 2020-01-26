@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/manageSpotFragment2"
-        android:title="Gestionar Spots" />
+        android:title="Gestionar Spots"/>
 
     <item
         android:id="@+id/searchSpotFragment"
@@ -20,4 +20,11 @@
         android:id="@+id/userProfileFragment"
         android:title="Perfil" />
 
+    <item
+        android:id="@+id/helpFragment2"
+        android:title="Ayuda"/>
+
+    <item
+        android:id="@+id/iniciarSesionFragment"
+        android:title="Cerrar Sesión"/>
 </menu>
